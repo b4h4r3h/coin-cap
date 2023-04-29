@@ -55,7 +55,7 @@ export function ExchangesTable() {
   ];
 
   function renderFarm() {
-    return data.map(function (item) {
+    return data.slice(0, visible).map(function (item) {
       const {
         exchangeId,
         rank,
@@ -100,7 +100,9 @@ export function ExchangesTable() {
             pagination={false}
           />
         </div>
+        <div className="btn-parent">
         {<Button onClick={showMore}>view</Button>}
+        </div>
       </TableStyle>
     </Fragment>
   );

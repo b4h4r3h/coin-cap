@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { shadow, green, red } from "../../../utils/styles/colors";
+import { shadow, green, red, white } from "../../../utils/styles/colors";
 export const TableStyle = styled.div`
 .table-style{
     position:relative;
@@ -20,4 +20,23 @@ export const TableStyle = styled.div`
 .red-change{
     color:${red};
 }
+.btn-parent{
+    margin-top: 80px;
+}
+Button{
+    all:unset;
+    padding: 12px 40px;
+    background: ${green};
+    border-radius:24px;
+    cursor:pointer;
+    display:block;
+    margin:0 auto;
+    span{
+        color:${white}
+    }
+    :hover{
+        background-color: ${green} !important;
+        opacity:0.8;
+    }
+} 
 `
