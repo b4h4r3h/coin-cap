@@ -1,0 +1,8 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    background: #111;
+    font-family: Vazirmatn;
+}
